@@ -1,0 +1,108 @@
+﻿<div class='login'>
+
+    <div class='header'>
+        Sign In
+    </div>
+    <div class='loginForm'>
+        <small>
+            <div class="alert alert-error loginValidation hide">
+                <span class='msg'>HEY! no match</span>
+            </div>
+            <div class="form-horizontal">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class='requiredNote' style='float: right;'>
+                        <span class='warning'>*</span> Required field
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="txtEmail">
+                            Email Address<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtEmail" name="txtEmail" placeholder="Email Address" class="input-xlarge" required="" type="text" maxlength="50">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="control-group">
+                        <label class="control-label" for="txtPassword">
+                            Password<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtPassword" name="txtPassword" placeholder="Password" class="input-xlarge" required="" type="password"  maxlength="50">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <!-- Button (Double) -->
+                    <div class="control-group">
+                        <label class="control-label">
+                        </label>
+                        <div class="controls">
+                            <a class='btn btn-primary btnSubmitCredentials' data-toggle='modal' href="#">Sign In</a>
+                            <button id="btnCancel" name="btnCancel" class="btn btn-default btnCancel">Cancel</button>
+                            <p class="help-block" style='padding-top:10px;'>
+                                <a href='#' class='hlLoginReset'>Forget Your Password?</a>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </small>
+    </div>
+</div>
+<div class='loginReset hide'>
+   <h2>
+        Forget Your Password?
+    </h2>
+    <p>
+        If you have forgotten your password, enter your e-mail address below. We will send a message to your e-mail address with a link you can use to come back to the Content Syndication site and choose a new password.
+    </p>
+    <p>
+        Please note that the speed at which the e-mail message from the Content Syndication site arrives in your e-mail box depends on your Internet Service Provider. 
+    </p>
+    <div class='loginForm'>
+        <small>
+            <div class="alert alert-error contactInfoValidation hide">
+                <span class='msg'></span>
+            </div>
+            <div class="form-horizontal">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class='requiredNote' style='float: right;'>
+                        <span class='warning'>*</span> Required field
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="txtEmail">
+                            Email Address<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtEmailReset" name="txtEmailReset" placeholder="Email Address" class="input-xlarge" required="" type="text" maxlength="50">
+                        </div>
+                    </div>
+                    <!-- Button (Double) -->
+                    <div class="control-group">
+                        <label class="control-label">
+                        </label>
+                        <div class="controls typeG">
+                            <a class='button btnResetPassword' data-toggle='modal' href="#">Reset Password</a>     
+                            <button id="Button1" name="btnCancel" class="btn btn-default btnCancel">Cancel</button>                       
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </small>
+    </div>
+ 
+</div>
+
+<div class='resetRequested hide'>
+   <h2>
+        Thank you!
+    </h2>
+    <p>
+        We have sent an email containing instructions on how to reset your account to <span id="spEmail"></span>.
+    </p>
+    <p>
+        Please note that the speed at which the e-mail message from the Content Syndication site arrives in your e-mail box depends on your Internet Service Provider and/or mail provider. 
+    </p>
+ 
+</div>
+
+<div class="modal hide modal-tos" id="modalTos">
+</div>

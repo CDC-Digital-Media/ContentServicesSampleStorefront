@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" >
+
+    <title></title>
+
+    <script language='javascript'>
+
+        var APIRoot = '', webFolder = '';
+        if (document.location.toString().toLowerCase().indexOf('test_storefront') > -1) {
+            APIRoot = 'http://nchm-tvss1-srv.cdc.gov'
+            webFolder = 'test_StoreFront'
+        }
+        else if (document.location.toString().toLowerCase().indexOf('dev_storefront') > -1) {
+            APIRoot = 'http://nchm-dvss1-srv.cdc.gov'
+            webFolder = 'dev_StoreFront'
+        }
+        else {
+            APIRoot = 'http://nchm-dvss1-srv.cdc.gov'
+            webFolder = ''
+        }        
+
+    </script>
+
+
+    <link rel="Stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+    <link rel="Stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="Stylesheet" type="text/css" href="Styles/Site.css"/>
+    <link rel="Stylesheet" type="text/css" href="Styles/rcarousel.css"/>
+    
+    <script src='Scripts/jquery-1.9.1.min.js") %>' type="text/javascript"></script>
+    <script src='bootstrap/js/bootstrap.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.ui.core.min.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.ui.widget.min.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.ui.rcarousel.min.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.cookie.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.autoellipsis-1.0.10.min.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.unique-element-id.js") %>' type="text/javascript"></script>
+    <script src='Scripts/jquery.watermark.min.js") %>' type="text/javascript"></script>
+    <script src="/Scripts/jquery.purl_2.3.1.js" type="text/javascript"></script>
+
+    <script src='Scripts/MarketPlace.Context_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.TopicNav_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.GenTiles_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.TileCarousel_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.MediaPulldown_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.LanguagePulldown_0.1.js") %>' type="text/javascript"></script>
+    <script src='Scripts/MarketPlace.MediaNav_0.1.js") %>' type="text/javascript"></script>    
+    <script src='Scripts/MarketPlace.Pager_0.1.js") %>' type="text/javascript"></script>
+    
+    <script src='Scripts/__common.js") %>' type="text/javascript"></script>
+
+    <!-- ratings resources -->
+    <link rel="Stylesheet" type="text/css" href="ratings/csRatings.css"/>  
+    <script src='ratings/jquery.cookie.js") %>' type="text/javascript"></script>
+    <script src='ratings/Math.uuid.js") %>' type="text/javascript"></script>
+    <script src='ratings/gov.hhs.cdc.cs.ratings.ext.js") %>' type="text/javascript"></script>
+
+
+
+</head>
+
+
+<body>
+
+<style type="text/css"> 
+ 
+body {
+
+background-color: #fff;
+font-family: Segoe UI;
+font-size: 10pt;
+}
+
+
+
+h1 {
+padding-left: 5px;
+font-size: 12pt;
+color: #003366;
+font-face: arial;
+}
+
+
+h2 {
+padding-left: 5px;
+font-size: 10pt;
+color: #000000;
+font-face: arial;
+}
+
+h3 {
+
+padding-left: 10px;
+font-size: 9pt;
+color: #003366;
+padding-top:5px;
+}
+
+
+p {
+
+padding-left: 9px;
+}
+
+
+.infopanel li, .right_col li{
+
+font-family: arial;
+padding-left: 5px;
+font-size: 10pt;
+color: #000000;
+line-height: 210%;
+font-weight: 400;
+
+}
+
+h1 a:hover {
+text-decoration: none !important;
+cursor:default;
+}
+
+
+div#page {
+  border:1px solid #cccccc;
+  background-color: #FFF;
+  width: 1180px;
+  margin:0 auto;
+  padding:5px;
+  text-align:left;
+}
+
+div#header {
+  width:*;
+  height:*;
+}
+
+div#left {
+  float:left;
+  width: 75%;
+  float:left;
+  margin:10px 0 10px 5px;
+  height:*;
+}
+
+div#right_col {
+  float:left;
+  width: *;
+  margin:10px 0 10px 5px;
+  height:*;
+}
+
+
+div#testimonial, div#users, div#topics {
+
+  border: 1px solid #cccccc;
+  width: 245px;
+  padding: 5px 10px 10px 10px;
+  background-color: #ffffff;
+  margin: 5px 0 10px 5px;
+  height: *;
+  color: #000000;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E9ECF6));
+  background: -webkit-linear-gradient(top, #fff, #E9ECF6);
+  background: -o-linear-gradient(top, #fff, #E9ECF6);
+  background: linear-gradient(top, #fff, #E9ECF6);
+  background: linear-gradient(to bottom, #fff, #E9ECF6);  
+  background: -moz-linear-gradient(top, #fff, #E9ECF6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#E9ECF6');  
+}
+
+div#resources {
+
+  border: 1px solid #cccccc;
+  width: *;
+  padding: 1 em;
+  margin: 5px 0 10px 5px;
+  height: *;
+  color: #f5f5f5;
+  background: linear-gradient(top, #fff, #E9ECF6);
+  background: -moz-linear-gradient(top, #fff, #E9ECF6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#E9ECF6');  
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+div#Jump_Links {
+ 
+  border: 1px solid #cccccc;
+  width: *;
+  padding: 7px;
+  margin: 5px 0 10px 5px;
+  height: *;
+  color: #000000;
+  background: #ECF2FE;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  clear: both;
+  
+}
+
+
+div#video {
+
+  border: 1px solid #cccccc;
+  width: 265px;
+  padding: 1 em;
+  margin: 5px 0 10px 5px;
+  height: 160px;
+  color: #000000;
+  background: linear-gradient(top, #fff, #dad5eb);
+  background: -moz-linear-gradient(top, #fff, #dad5eb);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dad5eb');
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+div#footer {
+  width: *;
+  height:*;
+}
+
+
+.txt_size_test {
+
+font-size: 8pt;
+font-weight: 600;
+
+}
+
+div .infopanel {
+
+  border: 1px solid #cccccc;
+  width: *;
+  padding: 7px;
+  margin: 5px 0 10px 0;
+  height: *;
+  color: #000000;
+  background: #FFF;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+  clear: both;
+  
+}
+
+.button {
+
+	-webkit-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	background-color: #5B74A8;
+	border:1px solid #29447E;
+	font-family: Arial,Verdana, sans-serif;
+	font-size:13px;
+	font-weight:700;
+	padding:2px 6px;
+	height: 28px;
+	color:#f5f5f5;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px
+}
+
+
+ 
+</style>
+
+    <div class='tempHeader'>
+        Header
+    </div>
+    <div class='userNavBar'>
+        <div class='siteImg'></div>
+        <div class='userNav'>
+        
+            <div class="btn-group">
+                <a class="btn btn-link btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                    English 
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu languagePicker" role="menu" aria-labelledby="dLabel">
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <a class="btn btn-link btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i>
+                    George Costanza 
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a tabindex="-1" href="#">Logout</a></li>            
+                </ul>
+            </div>   
+            
+            <div class="btn-group">
+                <a class="btn btn-link btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-folder-open"></i>
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                    <li><a tabindex="-1" href="#">Do Something</a></li>            
+                    <li><a tabindex="-1" href="#">Do Something Else</a></li>   
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar panmedia">
+            <div class="navbar-inner">
+                <a class="brand" href="Default.htm"><i class="icon-home icon-white"></i></a>
+                <ul class="nav">
+                    <li><a mediaType="eCard" href="#">e-Cards</a></li>                    
+                    <li><a mediaType="Videos" href="#">Videos</a></li>
+                    <li><a mediaType="HTML" href="#">HTML Content</a></li>
+                    <li><a mediaType="Image" href="#">Images</a></li>
+                    <li><a mediaType="Button" href="#">Buttons</a></li>
+                    <li><a mediaType="Badge" href="#">Badges</a></li>
+                    <li><a mediaType="Widget" href="#">Widgets</a></li>
+                    <li><a mediaType="Infographic" href="#">Infographics</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <!-- **************************************************************** Beginning of Main Content Area ******************************************************************************* -->
+    <div id="left">
+        <div class="infopanel">
+            <h1 style="font-size:1.6em;"><a name="What" style='text-decoration:none;'>What is Content Syndication?</a></h1>
+            <p>
+                Content syndication is a method by which web content is made available to other
+                sites and channels. It is as easy as identifying the content you want, and then
+                pasting a small section of code from our site to yours.</p>
+            <div align="center">
+                <img src='https://tools.cdc.gov/syndication/App_Themes/CDC/images/content_syndication_flow_graphic.png' />
+            </div>
+        </div>
+        <br />
+
+        <div class="infopanel">
+            <h1 style="font-size:1.6em;"><a name="How" style='text-decoration:none;'>Watch How it Works</a></h1>
+            <p>
+            This 3 minute video shows how easy it is to incorporate CDC syndicated content into your web site.
+            <p></p>
+            <div align="center">
+
+                
+                <iframe width="420" height="315" src='http://www.youtube.com/embed/UsjdMcRTa_A'frameborder="0" allowfullscreen></iframe>
+                
+
+
+            </div>
+        </div>
+        <br />
+
+        <div class="infopanel">
+            <h1  style="font-size:1.6em;"><a name="Benefits" style='text-decoration:none;'>What are the Benefits?</a></h1>
+            <p>
+                Syndication gives you the ability to add CDC content directly to your web sites.
+                When content is updated at the source, those updates appear immediately on your
+                site, saving you valuable time and ensuring that CDC content on your site is as
+                up to date as possible.</p>
+            <ul class="benefits">
+                <li>Provides a minimal maintenance solution for keeping up-to-date, trusted, science-based
+                    information on your website.</li>
+                <li>Allows you to maintain the look-and-feel of your site while supplementing local
+                    information with relevant national information.</li>
+                <li>Gives you choice and control of the topics and quantity of CDC content on your site.</li>
+                <li>Provides access to CDC information without ever requiring your visitors to leave
+                    your web site.</li>
+                <li>Allows for more efficient use of your critical resources. Syndicated content is
+                    updated automatically, which frees you from having to manually monitor CDC sites
+                    and cut-and-paste new information.</li>
+            </ul>
+        </div>
+        <br />
+        <div class="infopanel">
+            <h1 style="font-size:1.6em;"><a name="Started" style='text-decoration:none;'>Get Started</a></h1>
+            <div align="center">
+                <img src='syndication/App_Themes/CDC/images/arrow-graphic.jpg' /></div>
+            <ol>
+                <li><span style="color: red; font-weight: 700;">Register:</span> When you register,
+                    you'll receive updates when we make enhancements to the site and when content is
+                    removed. You'll also get a unique Registration ID that is used to track metrics.
+                </li>
+                <li><span style="color: blue; font-weight: 700;">Discover:</span> Browse our site to
+                    find pages you're interested in syndicating to your own site. Add these pages to
+                    Your List. You can add as many pages as you like. </li>
+                <li><span style="color: green; font-weight: 700;">Get Content: </span>Click on the link
+                    to Your List at the top right corner of the page. Then select the pages you want
+                    to syndicate now, and choose Get Syndication Code. </li>
+            </ol>
+        </div>
+        <br />
+        <div class="infopanel">
+            <h1 style="font-size:1.6em;"><a name="Help" style='text-decoration:none;'>Get Help</a></h1>
+            <ul>
+                <!--<li><a href="">How to Guide ??</a></li>-->                
+                <li><a href="#" onclick="window.open('http://www.youtube.com/embed/UsjdMcRTa_A','_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=800, height=700'); return false;"'>Watch How it Works</a> (3 minute video)</li>
+                <li><a href='http://www.cdc.gov/socialmedia/contentservices/CS_Portfolio_Samples_v1.2.pdf'>Content Syndication Portfolio</a></li>
+                <li><a href="syndication/App_Themes/CDC/pdf/CS_User_Guide_v2.pdf">User Guide</a></li>
+                <li><a href="syndication/tos.aspx">Usage Guidelines</a></li>
+                <li><a href='/syndication/App_Themes/CDC/pdf/CS_FactSheet_final_v1.pdf'>Fact Sheet</a></li>                                
+                <li><a href="syndication/faqs.aspx">Frequently Asked Questions</a></li>
+                <!-- I am assuming this will link to our current FAQ page, though this page is a bit out of date.  Will verify with Stacey -->
+                <li>For technical help, contact us at <a href="mailto:IMTech@cdc.gov">IMTech@cdc.gov</a></li>
+                <li>For pages not already in the syndication catalog, you may <a href="http://tools.cdc.gov/syndication/request.aspx">
+                    request a page to be syndicated.</a></li>
+                <li>If you see issues with a syndicated page, you may <a href="http://tools.cdc.gov/syndication/problem.aspx">
+                    report the problem.</a></li>
+            </ul>
+            <h1 style="font-size:1.6em;"><a name="ForDevelopers" style='text-decoration:none;'>For Developers: Open Source Code and API Documentation</a></h1>
+            <ul>
+                <li><a href="syndication/api.aspx">CDC API Documentation</a></li>
+                <li><a href="syndication/feedgenerator.aspx">CDC Custom Feed Generator</a></li>
+                <li><a href="http://sourceforge.net/projects/contentservices/?source=directory">HHS Digital Media API Platform Open Source Code</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- **************************************************************** End of Main Content Area        ******************************************************************************* -->
+    <!-- **************************************************************** Beginning of right-center Column ******************************************************************************* -->
+    <div id="right_col">
+
+        <div id="Jump_Links" class='infopanel'>
+        <h3>On this Page</h3>
+        
+            <ul>
+                <li><a href="#What" style='text-decoration:none;'>What is Content Syndication?</a></li>
+                <li><a href="#How" style='text-decoration:none;'>Watch How it Works</a></li>
+                <li><a href="#Benefits" style='text-decoration:none;'>What are the Benefits?</a></li>
+                <li><a href="#Started" style='text-decoration:none;'>Get Started</a></li>
+                <li><a href="#Help" style='text-decoration:none;'>Get Help</a></li>
+            </ul>
+        </div>
+
+        <div id="testimonial">
+            <h3 style="font-size:1.3em; padding-bottom:10px; padding-left: 0px;'">What Our Partners Are Saying</h3>
+            <p style='padding-left:0px'>
+                <i>"Content syndication makes our website more robust and timely. Syndicating content
+                    is easy and frees us from having to update sections of the site. "</i>
+            </p>
+            <p class="txt_size_test"  style='padding-left:0px'>
+                Rachael Odom<br>
+                Arkansas Department of Health</p>
+            <br />
+            <p style='padding-left:0px'>
+                <i>"As we revised our website, we brainstormed ideas to make it more accessible, accurate
+                    and informative for the community. When we learned about the CDC's Did You Know?
+                    content, we felt it would be a great addition to our website. Health information
+                    is ever-evolving and this syndication tool helps keep our online visitors engaged
+                    and informed."</i>
+                <!-- <img src="../Images/quotation_mark_down.png" align="right"> -->
+            </p>
+            <p class="txt_size_test"  style='padding-left:0px'>
+                Corinn Dembkoski<br>
+                City of Nashua, New Hampshire, Division of Public Health and Community Services</p>
+        </div>
+        <div id="users" class="infopanel">
+            <h3 style="font-size:1.3em;">
+                Top Users</h3>
+            <ul>
+                <li>State and Local Health Departments</li>
+                <li>Federal Agencies</li>
+                <li>Hospitals</li>
+                <li>Universities</li>
+            </ul>
+            <!-- <div><img src="../Images/Top_Users.png"></div> -->
+        </div>
+        <div id="topics" class="infopanel">
+            <h3 style="font-size:1.3em;">
+                Syndication Topics</h3>
+            <ul>
+                <li>CDC 24/7</li>
+                <li>Diabetes</li>
+                <li>Emergency Prepardness</li>
+                <li>Flu</li>
+                <li>Food Safety</li>
+                <li>Outbreaks</li>
+                <li>Recursos de los CDC en Español</li>
+                <li>Sexually Transmitted Diseases</li>
+                <li>Smoking and Tobacco Use</li>
+                <li>Traveler's Health</li>
+                <li>Vital Signs</li>
+            </ul>
+            <p>
+                <a href="syndication/pages.aspx" style="text-decoration:none;">And many more.</a><!-- URL should be All Topics page -->
+            </p>
+            <!--  <div><img src="../Images/Content_Topics.png"></div> -->
+        </div>
+    </div>
+    <!-- ********************************************************************** End of Right-center column Rail  ******************************************************************************* -->
+
+
+
+    </body>
+</html>

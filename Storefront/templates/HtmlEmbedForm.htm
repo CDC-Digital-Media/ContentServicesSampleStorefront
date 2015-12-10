@@ -1,0 +1,402 @@
+﻿<div style='' class='embedForm form-horizontal'>
+        
+    <div class='csEcard_requiredNote' style='float:right;'>
+
+    </div>
+
+    <div class='subheader'>
+        Display Options 
+        <a href='#' class='displayOptionHelp'><i class="icon-question-sign"></i></a>
+    </div>
+
+    <div class="row">
+
+        <div class="control-group span3">
+            <label class="control-label" for="stripScripts">Strip Scripts</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" id="stripScripts" value="true" checked>                
+                </label>
+            </div>
+            <label class="control-label" for="stripAnchors">Strip Anchor Tags</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" id="stripAnchors" value="true">                
+                </label>
+            </div>
+            <label class="control-label" for="stripImages">Strip Images</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" id="stripImages" value="true">                
+                </label>                
+            </div>
+            <label class="control-label" for="stripComments">Strip Comments</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" id="stripComments" value="true" checked>                
+                </label>
+            </div>
+            <label class="control-label" for="stripStyles">Strip Inline Styles</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" id="stripStyles" value="true" checked>                
+                </label>
+            </div>
+
+        </div>
+
+        <div class="control-group span5">
+            <label class="control-label" for="imagePlacement0">Image Placement</label>
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="imgFloat" id="imagePlacement0" value="none" checked>
+                    Default(Unstyled)
+                </label>
+                <label class="radio">
+                    <input type="radio" name="imgFloat" id="imagePlacement1" value="left">
+                    Float Images Left
+                </label>
+                <label class="radio">
+                    <input type="radio" name="imgFloat" id="imagePlacement2" value="right">
+                    Float Images Right
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class='subheader'>
+        Script Options
+        <a href='#' class='scriptOptionHelp'><i class="icon-question-sign"></i></a>
+    </div>
+
+    <div class='container'>
+    <div class="control-group span4 row">
+
+
+        <label class="control-label" for="postprocessFunction">Post Process Function</label>
+        <div class="controls">            
+            <label class="text">
+                <input type="text" id="postprocessFunction" value=''/>                                
+            </label>
+        </div>
+
+        <label class="control-label" for="outputFormat">Output Format</label>
+        <div class="controls">  
+            <label class="select">          
+                <select id='outputFormat'>
+                    <option value='XHTML'>XHTML</option> 
+                    <option value='XML'>XML</option> 
+                </select>
+            </label>
+        </div>
+
+        <label class="control-label" for="outputEncoding">Output Encoding</label>
+        <div class="controls">            
+            <label class="text">
+                <input type="text" id="outputEncoding" value='UTF-8'/>                
+            </label>
+        </div>
+
+        <label class="control-label" for="contentNameSpace">Content Name Space</label>
+        <div class="controls">            
+            <label class="text">
+                <input type="text" id="contentNameSpace" value=''/>                
+            </label>
+        </div>
+
+        <label class="control-label" for="newWindow">Open links in new window</label>
+        <div class="controls">            
+            <label class="checkbox">
+                <input type="checkbox" id="newWindow" value="true">                
+            </label>
+        </div>
+
+        <label class="control-label" for="jQueryRef">Include jQuery reference</label>
+        <div class="controls">            
+            <label class="checkbox">
+                <input type="checkbox" id="jQueryRef" value="true" checked>                
+            </label>
+        </div>
+
+    </div>
+    </div>
+
+    <div class='subheader'>
+        Mapping Options
+    </div>
+
+    If you are not syndicating multiple linked pages, select None. If you are syndicating multiple linked pages and want to keep visitors 
+    on the hosting site, select one of the other two options. Click here for instructions for using mapping references.
+
+    <div class="control-group">
+        <label class="control-label" for="mappingOptions">Mapping Options</label>
+        <div class="controls">            
+            <label class="radio">
+                <input type="radio" name="mappingOptions" id="Radio1" value="mapNone" checked>
+                None (No mapping between content) 
+            </label>
+            <label class="radio">
+                <input type="radio" name="mappingOptions" id="Radio2" value="mapDefine">
+                Map using Host Page URL.
+                <input type="text" id='hostPageUrl' class='txtHostPage span3' placeholder='Host Page URL'/>
+            </label>
+            <label class="radio">
+                <input type="radio" name="mappingOptions" id="Radio3" value="mapManual">
+                Use Manual Mapping References via JavaScript  
+            </label>
+        </div>
+    </div>
+    <div class="control-group jsMappingFile">
+        
+            <div class='subheader'>
+                CDC.js File Instructions
+            </div>
+            Create a file on your server named "cdc.js". Copy the following JavaScript code
+            and paste into that file. This file should be included in all the syndicated pages
+            on your site. Please edit the mapping reference for each syndicated page. Enter
+            your URL that maps to the corresponding CDC page.
+            <div style='width: 100%; height: 100px; overflow: auto; border: 1px solid #999999;
+                background-color: White; z-index: 100; position: relative;'>
+                <pre class="codeBlock" readonly style='width: 1500px; line-height: 20px;'></pre>
+            </div>
+        
+    </div>
+    <div class="control-group jsEmbedBlock">
+        
+            <div class='subheader'>
+                Embed Code
+            </div>
+            Copy the following code block into your site to syndicate this Web Content.
+            <textarea rows="-1" class="codeBlock" readonly></textarea>
+        
+    </div>
+</div>
+
+
+<div style='display: none;'>
+    <div class='displayOptionHelpContent' title='Display Options'>
+        <small>
+            <table class='table'>
+                <tbody>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Code
+                        </th>
+                        <th>
+                            Values
+                        </th>
+                        <th>
+                            Notes
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Strip Scripts
+                        </td>
+                        <td>
+                            noscrpt
+                        </td>
+                        <td>
+                            <strong>1</strong> (default value) or 0
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), JavaScript is stripped from the results.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Strip Anchors
+                        </td>
+                        <td>
+                            noanch
+                        </td>
+                        <td>
+                            1 or <strong>0</strong> (default value)
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), anchor tags are stripped from the results, converting
+                            links into regular text. An Anchor is a HTML or XHTML element used to hyperlink
+                            to another document, or another location on the current document.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Strip Images
+                        </td>
+                        <td>
+                            noimg
+                        </td>
+                        <td>
+                            1 or <strong>0</strong> (default value)
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), images are stripped from the results.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Strip Comments
+                        </td>
+                        <td>
+                            nocmnt
+                        </td>
+                        <td>
+                            <strong>1</strong> (default value) or 0
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), comments are stripped from the results.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='white-space: nowrap;'>
+                            Strip Inline Styles
+                        </td>
+                        <td>
+                            nostyle
+                        </td>
+                        <td style='white-space: nowrap;'>
+                            <strong>1</strong> (default value) or 0
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), inline styles are stripped from the results.
+                            An inline style is a style that is applied to an HTML or XHTML element as an attribute
+                            of that element.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </small>
+    </div>
+</div>
+
+<div style='display: none;'>
+    <div class='scriptOptionHelpContent' title='Script Options'>
+        <small>
+            <table class='table'>
+                <tbody>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Code
+                        </th>
+                        <th>
+                            Values
+                        </th>
+                        <th>
+                            Notes
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript
+                        </td>
+                        <td>
+                            js
+                        </td>
+                        <td>
+                            <strong>1</strong> (default value) or 0
+                        </td>
+                        <td>
+                            When this value is set to 1 (true), the results will be returned as JavaScript document.write
+                            statements. When it's set to 0 (false), the results are returned as a content fragment.
+                            Setting this to true implies that you will be using the client-side (JavaScript)
+                            method as opposed to the server-side method for consuming content. Learn more about
+                            <span class="cdc-decorated"><a href="#clientvserver">
+                                Client-side (JavaScript) vs. Server-side Methods</a><a class="external" href="http://www.cdc.gov/Other/disclaimer.html"
+                                    target="_blank"><img class="externalImg" title="External Web Site Icon" alt="External Web Site Icon"
+                                        src="/TemplatePackage/images/icon_out.png"></a></span> .
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript Function
+                        </td>
+                        <td>
+                            jsfunction
+                        </td>
+                        <td>
+                            <strong>0</strong> (default value) or 1
+                        </td>
+                        <td>
+                            If set to one, overrides the Javascript flag and returns the requested content wrapped
+                            in an Java Script function (GetContentBlock()) for use in JavaScript operations
+                            on the page.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Output Format
+                        </td>
+                        <td>
+                            fmt
+                        </td>
+                        <td>
+                            <strong>xhtml</strong> (default value) or xml
+                        </td>
+                        <td>
+                            XHTML (Extensible Hypertext Markup Language) is a spinoff of the hypertext markup
+                            language (HTML) used for creating Web pages. It is based on the HTML 4.0 syntax,
+                            but has been modified to follow the guidelines of XML. XML (EXtensible Markup Language)
+                            is open standard for describing data from the W3C. It is used for defining data
+                            elements on a Web page and business-to-business documents. XML uses a similar tag
+                            structure as HTML; however, whereas HTML defines how elements are displayed, XML
+                            defines what those elements contain.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Output Encoding
+                        </td>
+                        <td>
+                            oe
+                        </td>
+                        <td>
+                            <strong>UTF-8</strong> (default value)
+                        </td>
+                        <td>
+                            Defines the output format of the syndicated content. E.g. UTF-8, ISO-8859-1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Content Name Space
+                        </td>
+                        <td>
+                            ns
+                        </td>
+                        <td>
+                            Any combination of alpha characters. Default value is null.
+                        </td>
+                        <td>
+                            Used to decorate (prefix) the tags and ids in the results to prevent conflict with
+                            existing host page elements. Must contain only upper or lower case letters. An underscore
+                            character will be appended by the service.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            New Window
+                        </td>
+                        <td>
+                            nw
+                        </td>
+                        <td>
+                            <strong>1</strong> (default value) or 0
+                        </td>
+                        <td>
+                            When this value is set to 0 (false), links will not open into a new window. When
+                            this value is set to 1 (true), links are forcibly updated with target="_blank,"
+                            which causes links to open into a new window.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </small>
+    </div>
+</div>

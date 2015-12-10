@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E9675F1-F349-4C84-AF56-92FB5F4F4ADF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Storefront</RootNamespace>
+    <AssemblyName>Storefront</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+    <JSLintSkip>\prettify\prettify.min.js|\ratings\jquery-1.8.1.min.js|\Scripts\jquery-1.9.1.min.js|\Scripts\jquery.autoellipsis-1.0.10.min.js|\Scripts\jquery.ui.rcarousel.min.js|\Scripts\jquery.purl_2.3.1.js|\Scripts\jquery.watermark.min.js|\Scripts\jquery.unique-element-id.js|\bootstrap\js\bootstrap-modal.js|\bootstrap\js\bootstrap.js|\Scripts\jquery.ui.core.min.js|\Scripts\jquery.ui.widget.min.js|\Scripts\jquery.listnav.min-2.1.js|\Scripts\CDC.Video.js|\Scripts\jquery.ui.rcarousel.js</JSLintSkip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gov.Hhs.Cdc.OAuth">
+      <HintPath>..\..\_binRef\Gov.Hhs.Cdc.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap-modal.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="Default.htm" />
+    <Content Include="fbTest.aspx" />
+    <Content Include="Images\ADHD-KnowForSure.swf" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\badge_NEW.png" />
+    <Content Include="Images\blue_minus.png" />
+    <Content Include="Images\blue_plus.png" />
+    <Content Include="Images\CartDemo.png" />
+    <Content Include="Images\CartDemo1.png" />
+    <Content Include="Images\checkboxes.png" />
+    <Content Include="Images\ElephantShrew.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\googleplus.png" />
+    <Content Include="Images\icon_pdf.gif" />
+    <Content Include="Images\itunes.png" />
+    <Content Include="Images\MediaMarketplace.png" />
+    <Content Include="Images\nav_caret.png" />
+    <Content Include="Images\nav_caret_50.png" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\rss.png" />
+    <Content Include="Images\social_mockup.png" />
+    <Content Include="Images\sprites-filetypes.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="LearnMore.htm" />
+    <Content Include="mediaAssets\ecards\cards\cancer\LungCancerMen.jpg" />
+    <Content Include="mediaAssets\ecards\cards\cancer\LungCancerMen.swf" />
+    <Content Include="mediaAssets\ecards\cards\cancer\LungCancerWomen.jpg" />
+    <Content Include="mediaAssets\ecards\cards\cancer\LungCancerWomen.swf" />
+    <Content Include="mediaAssets\ecards\cards\Halloween\11_226952A_zollicoffer_Halloween_Health_eCard.jpg" />
+    <Content Include="mediaAssets\ecards\cards\Halloween\11_226952A_zollicoffer_Halloween_Health_eCard.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_215218B_hughley_OSH_eCard.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_215218B_hughley_OSH_eCard.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_219152A_hughley_ecard_for_SGR_release1.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_219152A_hughley_ecard_for_SGR_release1.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_219171A_hughley_year_to_quit_ecard.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\10_219171A_hughley_year_to_quit_ecard.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\11_220593A_hughley_Valentines_Day_e-card.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\11_220593A_hughley_Valentines_Day_e-card.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\11_224758_july4_quit_smoking.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\11_224758_july4_quit_smoking.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\12_230360A_hughley_eCard_SGR_Youth_Smoking.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\12_230360A_hughley_eCard_SGR_Youth_Smoking.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard1waiting.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard1waiting.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard2tiredplanning.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard2tiredplanning.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard3takesbreath.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard3takesbreath.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard4smokefree.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard4smokefree.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard5eatfortwo.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\ecard5eatfortwo.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\LiveSmokeFree.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\LiveSmokeFree.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\quitsmoking1.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\quitsmoking1.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\quitsmoking2.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\quitsmoking2.swf" />
+    <Content Include="mediaAssets\ecards\cards\smoking\YouCanQuitSmoking.jpg" />
+    <Content Include="mediaAssets\ecards\cards\smoking\YouCanQuitSmoking.swf" />
+    <Content Include="mediaAssets\ecards\cards\valentines\OSH_Valentine_2012.jpg" />
+    <Content Include="mediaAssets\ecards\cards\valentines\OSH_Valentine_2012.swf" />
+    <Content Include="mediaAssets\ecards\cards\WomensHealth\WearRed2013.jpg" />
+    <Content Include="mediaAssets\ecards\cards\WomensHealth\WearRed2013.swf" />
+    <Content Include="prettify\prettify.min.css" />
+    <Content Include="prettify\prettify.min.js" />
+    <Content Include="ratings\csRatings.css" />
+    <Content Include="ratings\gov.hhs.cdc.cs.ratings.ext.js" />
+    <Content Include="ratings\Images\5stars.png" />
+    <Content Include="ratings\jquery-1.8.1.min.js" />
+    <Content Include="ratings\jquery.cookie.js" />
+    <Content Include="ratings\Math.uuid.js" />
+    <Content Include="Scripts\jquery.ui.rcarousel.js" />
+    <Content Include="Scripts\Marketplace.EcardReceipt.js" />
+    <Content Include="Scripts\Marketplace.Login_0.1.js" />
+    <Content Include="Scripts\Marketplace.OrgTypePulldown_0.1.js" />
+    <Content Include="Scripts\Marketplace.OrgUsers_0.1.js" />
+    <Content Include="Scripts\Marketplace.Organization_0.1.js" />
+    <Content Include="Scripts\Marketplace.Account_0.1.js" />
+    <Content Include="Scripts\jquery.listnav.min-2.1.js" />
+    <Content Include="Scripts\Marketplace.Registration_0.1.js" />
+    <Content Include="Scripts\Marketplace.PodcastChannel_0.1.js" />
+    <Content Include="Scripts\Marketplace.Crumb_0.1.js" />
+    <Content Include="Scripts\Marketplace.PodcastEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Podcast_0.1.js" />
+    <Content Include="Scripts\Marketplace.VideoEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Video_0.1.js" />
+    <Content Include="Scripts\jquery.purl_2.3.1.js" />
+    <Content Include="Scripts\Marketplace.ButtonEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Button_0.1.js" />
+    <Content Include="Scripts\Marketplace.InfographicEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Infographic_0.1.js" />
+    <Content Include="Scripts\Marketplace.BadgeEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Badge_0.1.js" />
+    <Content Include="Scripts\Marketplace.ImageEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Image_0.1.js" />
+    <Content Include="Scripts\Marketplace.EcardEmbed_01.js" />
+    <Content Include="Scripts\Marketplace.HtmlContentEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.HtmlContent_0.1.js" />
+    <Content Include="Scripts\CDC.Video.js" />
+    <Content Include="Scripts\Marketplace.Ecard_01.js" />
+    <Content Include="Scripts\jquery.unique-element-id.js" />
+    <Content Include="Scripts\jquery.watermark.min.js" />
+    <Content Include="Scripts\Marketplace.MediaHeader_0.1.js" />
+    <Content Include="Scripts\Marketplace.Pager_0.1.js" />
+    <Content Include="Scripts\Marketplace.WidgetEmbed_0.1.js" />
+    <Content Include="Scripts\Marketplace.Widget_0.1.js" />
+    <Content Include="Scripts\Marketplace.MediaNav_0.1.js" />
+    <Content Include="Scripts\jquery.autoellipsis-1.0.10.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\Marketplace.Context_0.1.js" />
+    <Content Include="Scripts\Marketplace.LanguagePulldown_0.1.js" />
+    <Content Include="Scripts\Marketplace.MediaPulldown_0.1.js" />
+    <Content Include="Scripts\sf.addToSyndicationList.js" />
+    <Content Include="Scripts\sf.domainPicker.js" />
+    <Content Include="Scripts\sf.mediaListItem.js" />
+    <Content Include="Scripts\sf.removeFromSyndicationList.js" />
+    <Content Include="Scripts\sf.requestPasswordReset.js" />
+    <Content Include="Scripts\sf.reset.js" />
+    <Content Include="Scripts\sf.retrieveSyndicationList.js" />
+    <Content Include="Scripts\__common.js" />
+    <Content Include="Scripts\_default.js" />
+    <Content Include="Scripts\Marketplace.TileCarousel_0.1.js" />
+    <Content Include="Scripts\Marketplace.GenTiles_0.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.rcarousel.min.js" />
+    <Content Include="Scripts\jquery.ui.widget.min.js" />
+    <Content Include="Scripts\Marketplace.TopicNav_0.1.js" />
+    <Content Include="Secure.aspx" />
+    <Content Include="Share.aspx" />
+    <Content Include="shareTestIndex.htm" />
+    <Content Include="Styles\csHtmlContent.css" />
+    <Content Include="Styles\csEcard.css" />
+    <Content Include="Styles\csPodcast.css" />
+    <Content Include="Styles\font-awesome.min.css" />
+    <Content Include="Styles\rcarousel.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="templates\BadgeEmbedForm.htm" />
+    <Content Include="templates\ButtonEmbedForm.htm" />
+    <Content Include="templates\Account.htm" />
+    <Content Include="templates\Login.htm" />
+    <Content Include="templates\MediaListItem.htm" />
+    <Content Include="templates\ModalUsage.htm" />
+    <Content Include="templates\Organization.htm" />
+    <Content Include="templates\OrgUsers.htm" />
+    <Content Include="templates\PodcastEmbedForm.htm" />
+    <Content Include="templates\PodcastSubscribe.htm" />
+    <Content Include="templates\Registration.htm" />
+    <Content Include="templates\Reset.htm" />
+    <Content Include="templates\UsageGuidelines.htm" />
+    <Content Include="templates\VideoEmbedForm.htm" />
+    <Content Include="templates\MediaHeader1.htm" />
+    <Content Include="templates\InfographicEmbedForm.htm" />
+    <Content Include="templates\ImageEmbedForm.htm" />
+    <Content Include="templates\EcardEmbedForm.htm" />
+    <Content Include="templates\HtmlEmbedForm.htm" />
+    <Content Include="templates\MediaHeader.htm" />
+    <Content Include="templates\WidgetEmbedForm.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fbTest.aspx.cs">
+      <DependentUpon>fbTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fbTest.aspx.designer.cs">
+      <DependentUpon>fbTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secure.aspx.cs">
+      <DependentUpon>Secure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share.aspx.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share.aspx.designer.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Content Include="Styles\listNav.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prettify\closure.map" />
+    <Content Include="Web.Development.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Test.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Production.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59220</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44399</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

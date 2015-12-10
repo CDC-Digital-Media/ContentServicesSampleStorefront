@@ -1,0 +1,170 @@
+﻿.csPodcastItem
+{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.csPodcastItem > .thumbnail
+{
+    width: 100px;
+    height: 85px;
+    background-position: -25px 0px;
+    background-repeat: no-repeat;
+    border: none;
+    float: left;    
+}
+
+
+.csPodcastItem > .itemContent
+{
+    display: block;
+    padding-left: 120px;
+}
+
+.csPodcastItem .date
+{
+    padding-left: 20px;
+    float: right;
+    font-size: 85%;
+}
+
+.csPodcastItem .title
+{
+    font-weight: bold;
+}
+
+.csPodcastItem .assets
+{
+    padding: 10px;
+}
+
+.csPodcastItem .website
+{
+    display: block;
+    padding: 9px;
+}
+
+.csPodcastItem .websiteLabel
+{
+    display: block;
+    float: left;
+    padding: 10px 10px 10px 0px;
+    font-size: 85%;
+}
+
+.csPodcastItem .relatedItems
+{
+    clear: both;
+}
+
+.csPodcastItem .relatedItems li 
+{
+    padding:2px;
+    }
+
+.csPodcastItem .lblMediaFiles
+{
+    display: block;
+    clear: both;
+    font-size: 85%;
+}
+
+.csPodcastItem .syndicateLabel
+{
+    float: right;
+    margin-bottom: 20px;
+}
+.csPodcastItem.selected
+{
+    background-color: #f2f5f9;
+}
+
+
+.csPodcastItem .sprite-16-pdf
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;    
+    background: url("../Images/sprites-filetypes.png") no-repeat -3px -1px;
+    width: 16px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-ppt
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -24px -1px;
+    width: 16px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-word
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -45px -1px;
+    width: 16px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-excel
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -65px -1px;
+    width: 16px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-wmv
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -85px -1px;
+    width: 16px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-qt
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -104px -1px;
+    width: 15px;
+    height: 15px;
+}
+.csPodcastItem .sprite-16-rp
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -123px -1px;
+    width: 16px;
+    height: 15px;
+}
+.csPodcastItem .sprite-16-txt
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -143px -1px;
+    width: 13px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-zip
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -160px -1px;
+    width: 15px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-sas
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -181px -1px;
+    width: 11px;
+    height: 16px;
+}
+.csPodcastItem .sprite-16-ebook
+{
+    display: inline-block;
+    margin:0px 0px -2px 5px;
+    background: url("../images/sprites-filetypes.png") no-repeat -197px 0;
+    width: 14px;
+    height: 18px;
+}

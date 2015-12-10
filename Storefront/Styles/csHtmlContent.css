@@ -1,0 +1,10 @@
+﻿.csHtmlContent{
+    font-family:Segoe UI;
+	font-size:14px;		    
+    }
+
+.csHtmlContent img 		
+{
+    float:left;	
+    margin: 0 20px 20px 0;
+	}

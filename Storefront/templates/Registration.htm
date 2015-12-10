@@ -1,0 +1,103 @@
+﻿<div class='registration'>
+    <h1>Create a New Content Syndication User Account</h1>
+    <p>
+        Your information will only be used to give you access to your account and to deliver your syndication code which will include your unique Registration ID.
+    </p>
+    <h1>Contact Information</h1>
+    <div class='registrationForm'>
+        <small>
+            <div class="alert alert-error contactInfoValidation hide">
+                <span class='msg'>Message</span>
+            </div>
+            <div class="form-horizontal">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class='requiredNote' style='float: right;'>
+                        <span class='warning'>*</span> Required field
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="txtFirstName">
+                            First Name<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtFirstName" name="txtFirstName" placeholder="First Name" class="input-xlarge" required="" type="text" maxlength="256">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="control-group">
+                        <label class="control-label" for="txtMiddleName">
+                            MI</label>
+                        <div class="controls">
+                            <input id="txtMiddleName" name="txtMiddleName" placeholder="MI" class="input-mini" required="" type="text"  maxlength="1">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="control-group">
+                        <label class="control-label" for="txtLastName">
+                            Last Name<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtLastName" name="txtLastName" placeholder="Last Name" class="input-xlarge" required="" type="text"  maxlength="256">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                </fieldset>
+            </div>
+        </small>
+    </div>
+    <h1>Organization</h1>
+    <div class='organization'>
+    </div>
+    <h1>Login Information</h1>
+    <p>
+        Please enter your e-mail address and select a password for your account. Passwords are case sensitive and must:
+        <ul>
+            <li>Be 7 to 15 characters in length</li>
+            <li>Contain at least one upper case letter</li>
+            <li>Contain at least one lower case letter</li>
+            <li>Contain at least one number</li>
+        </ul>
+    </p>
+    <div class='registrationForm'>
+        <small>
+            <div class="alert alert-error loginValidation hide">
+                <span class='msg'>Message</span>
+            </div>
+            <div class="form-horizontal">
+                <fieldset>
+                    <div class="control-group">
+                        <label class="control-label" for="txtLastName">
+                            Email Address<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtEmail" name="txtEmail" placeholder="Email Address" class="input-xlarge" required="" type="text" maxlength="256">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="txtPassword1">
+                            Password<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtPassword1" name="txtPassword1" placeholder="Password" class="input-xlarge" required="" type="password" maxlength="15">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="txtPassword2">
+                            Re-enter Password<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtPassword2" name="txtPassword2" placeholder="Re-enter Password" class="input-xlarge" required="" type="password" maxlength="15">
+                        </div>
+                    </div>
+                    <!-- Button (Double) -->
+                    <div class="control-group">
+                        <label class="control-label" for="button1id">
+                        </label>
+                        <div class="controls typeG">
+                            <a class='button btnSubmitRegistration' data-toggle='modal' href="#modalTos">Save</a>
+                            <button id="btnCancel" name="btnCancel" class="btn btn-default btnCancel">
+                                Cancel</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </small>
+    </div>
+    <div class="modal hide modal-tos" id="modalTos">
+    </div>
+</div>

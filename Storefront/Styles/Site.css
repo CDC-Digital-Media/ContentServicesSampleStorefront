@@ -1,0 +1,845 @@
+﻿html
+{
+    font-family: Lato, Segoe UI;
+    overflow-y: scroll;
+}
+
+body
+{
+    width: 1165px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Segoe UI;
+}
+
+input, select
+{
+    font-family: Lato, Segoe UI; 
+    }
+
+a:link
+{
+    color: #476ca4;
+}
+/* unvisited link */
+a:visited
+{
+    color: #476ca4;
+}
+/* visited link */
+a:hover
+{
+    color: #0000FF;
+}
+/* mouse over link */
+a:active
+{
+    color: #0000FF;
+}
+/* selected link */
+
+.tempHeader
+{
+    border: 1px dashed grey;
+    border-bottom: 1px solid grey;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.userNavBar {
+    height: 34px;
+}
+.navbar .nav > li > a {text-shadow: 0 1px 0 #2d4969;}
+
+.userNavBar .siteImg
+{
+    width: 202px;
+    height: 34px;
+    float: left;
+    display: inline-block;
+    background-image: url('../Images/MediaMarketplace.png');
+}
+
+.userNavBar .userNav
+{
+    float: right;
+    display: inline-block;
+}
+
+.userNavBar a:hover
+{
+    text-decoration: none;
+}
+
+
+.userNavBar .nolink, .userNavBar .nolink:hover  
+{
+    color:#333333;
+    text-decoration:none;
+    cursor:default;
+    padding-right:0px !important;
+    margin-right:-7px;
+}
+
+.contentWrap {margin-top:14px;}
+
+.panmedia {
+    clear: both;
+    line-height:14px !important;
+}
+
+.panmedia .navbar-inner
+{
+    background-color: #4b72ae;
+	background-image:none !important;
+    filter: none;
+    min-height: 20px;
+    border-bottom:none !important;
+}
+
+.panmedia .brand
+{
+    background-color: #698bbe;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border-right: 1px solid white;
+}
+
+.panmedia a
+{
+    color: White !important;
+    font-weight: bold;
+    padding-top: 7px !important;
+    padding-bottom: 9px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.panmedia .nav a.active
+{
+    background-repeat:no-repeat;
+    background-image: url('../Images/nav_caret.png');
+    background-position:center bottom; 
+}
+
+.panmedia .nav li:hover 
+{ 
+    background-repeat:no-repeat;
+    background-image: url('../Images/nav_caret_50.png');
+    background-position:center bottom;
+}
+
+.leftNav
+{
+    float: left;
+    width: 250px;
+    font-size: smaller;
+    margin-right: 5px;
+    background-color: #F2F5F9;
+}
+
+.leftNav ul
+{
+    background-color: white;
+    }
+
+.leftNav .nav .nav
+{
+    padding-left:30px;
+    margin-bottom:0px;
+}
+
+.leftNav .nav .nav li {
+	margin-bottom:10px;
+}
+
+.leftNav .nav .nav .active
+{
+    color:Black !important;
+    background-color:#eeeeee;
+    }
+
+
+.leftNav .nav-expand, .leftNav .nav-collapse {width:30px; height:30px; background-repeat:no-repeat; background-position:9px 12px;}
+.leftNav .nav-expand:hover, .leftNav .nav-collapse:hover{cursor:hand;}
+
+.leftNav .nav-expand 
+{
+    background-image: url('../Images/blue_plus.png');	
+    }
+
+.leftNav .nav-collapse
+{
+    background-image: url('../Images/blue_minus.png');
+    }
+
+
+.mediaTypeFilter
+{
+    text-align: left;
+    }
+
+.centerPanel
+{
+    float: left;
+    width: 680px;
+    min-height:100px; 
+}
+
+.centerPanel .csMediaFooter
+{
+    display:block;
+    border-top: 1px solid #cccccc;
+    padding-top:10px;
+    margin-top:20px;
+    }
+
+.searchPanel
+{
+    background-color:  #e7d7a5;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 0px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #7f7f7f;
+}
+
+.searchPanel .crumb
+{
+    font-size:small;
+    font-weight:normal;
+    line-height:18px;
+    padding-bottom:5px;	
+    }
+
+.searchPanel .crumb a
+{
+    padding:0px 3px 0px 3px;
+    }
+
+.searchPanel .crumb .current
+{
+   color:black;
+    }
+
+.searchPanel .header
+{
+    width:25%;
+    float:left;
+    text-align: right;
+    padding-right:10px;
+    padding-top:3px;
+}
+
+.mediaContent
+{
+    padding-bottom: 20px;
+    display: block;
+}
+
+.mediaContent a
+{
+    color: #58abff;
+}
+
+.mediaContent .sortOptions a.btn {
+    color: #58abff;
+}
+
+.mediaContent a.btn
+{
+    color: inherit;
+}
+
+.mediaContent a.btn-primary,
+a.btn-primary {
+    color: #fff !important;
+}
+
+.mediaListItem td {vertical-align:top;}
+.mediaListItem td:last-child {vertical-align:middle;}
+.mediaList-action {margin-top:12px;}
+.mediaListItem {padding-bottom:8px;}
+.mediaListItem table {
+	margin-bottom:8px;
+	border-bottom:1px solid #ccc;
+	min-height:80px;
+}
+.mediaListItem .mediaListThumb img {border:1px solid #ccc;}
+.mediaListDesc {padding-left:10px;}
+
+.mediaContent .header, .featuredContent .header
+{
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 1px solid #ededec;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    padding:3px;
+}
+
+.mediaContent .header
+{
+    clear:both;
+    }
+
+
+.mediaContent .groupHeader
+{
+    clear:both;
+    background-color: #cbd7e8;
+    padding:3px;
+    margin-bottom:5px;
+    font-size:smaller;
+    font-weight:bold;
+    }
+
+.featuredContent
+{
+    background-color: #cbd7e8;
+    height:200px;
+    }
+
+.featuredContent .mediaTile
+{
+    border:1px solid black;
+    height:150px !important;
+    overflow:hidden;
+}
+
+.featuredContent .mediaTile .floatBottom
+{
+    display:none;
+    }
+
+.mediaContent .dynamic .header
+{
+    margin-top:-40px;
+}
+
+.mediaContent .subheader
+{
+    width: 100%;
+    font-weight: bold;
+    color: #7f7f7f;
+    margin-bottom: 5px;
+}
+
+.featuredContent .header .sliderControls
+{
+    float: right;
+    font-size: smaller;
+    font-weight: normal;
+    padding-right:5px;
+}
+
+.featuredContent .header .sliderControls i
+{
+    cursor:pointer;
+}
+
+.mediaContent .items
+{
+}
+
+.mediaTile
+{
+    width: 165px;
+    height: 195px;
+    border: 1px solid #dedede;
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    position:relative;
+    background-color:White;
+	
+}
+
+.mediaTile .previewImg
+{
+    width: 150px;
+    height: 84px;
+    border: 1px solid #dedede;
+    margin: 5px 7px 5px 7px;
+    cursor:pointer;	
+    overflow:hidden;
+}
+
+.mediaTile .title
+{
+    overflow:hidden;	
+    height: 37px;
+    width: 160px;
+	font-size:10pt;
+	line-height:11pt;
+}
+
+.mediaTile .floatBottom
+{
+    /* position: absolute; 
+    bottom: 0px;
+    width: 155px; */
+}
+
+.mediaTile .newCorner
+{
+    background-image: url('../Images/new.png');
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+    -o-transform: rotate(-90deg); /* Opera */
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+}
+
+.tileTag_new {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.mediaTile .icon-shopping-cart
+{
+    background-color:white;
+    border:1px solid black;
+    position:absolute;
+    z-index: 100;
+    padding:5px;
+    margin-left:137px;
+    margin-top:2px;
+    background-position:-355px -115px; 
+    }
+    
+    
+.mediaTile .checked    
+{
+    
+    position:absolute;
+    z-index: 200;
+    padding:5px;
+    margin-left:141px;
+    margin-top:-2px; 
+    }
+
+.icn-checkbox {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background-image:url(../images/checkboxes.png);
+	background-repeat:no-repeat;
+	background-position:-48px 0;
+	overflow:hidden;
+}
+.icn-checkbox {background-position:0 0;}
+.icn-checkbox:hover {background-position:-24px 0;}
+.cs-tile-selected .icn-checkbox {background-position:-48px 0;}
+
+.cs-tile {position:relative;}
+
+.cs-tile img.cs-tile-thumb {
+    border:1px solid #ddd;
+	width:155px;
+	height:84px;
+}
+
+.cs-tile-help {color:#999;}
+
+/*.cs-tile-selected {border:1px solid #085100 !important;}*/
+
+.cs-tile-addtolist {
+	font-size:9pt;
+	color:#666;
+	cursor: pointer;
+	display:none;
+	position:absolute;
+	bottom:-33px;
+	left:0;
+	width:100%;
+	z-index:1000;
+}
+.cs-tile-addtolist i {
+	vertical-align:middle;
+	margin:-2px 5px 0 0;
+	color:#fff;
+	font-size:11pt;
+}
+
+.tabs .cs-tile-addtolist {
+	position:absolute;
+	top:12px;
+	right:20px;
+	color:#666;
+	font-size:10pt;
+	white-space:nowrap;
+	display:block;
+}
+.tabs .cs-tile-selected {border:none !important;}
+
+.btnAddtoList {
+	background:#369 url(../Images/nav_caret_down.png) top center no-repeat;
+	color:#fff;
+	padding:8px 4px;
+	text-align:center;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+
+
+.rightRail
+{
+    width: 220px;
+    float: right;
+}
+
+
+.rightRail .whatever
+{
+    width: 185px;
+    background-color: #cbd7e8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 25px;
+    display:inline-block;
+}
+
+
+.progressIndicator, .podcastProgressIndicator
+{
+    min-width:100px;
+    min-height:100px;
+    background: url('../Images/ajax-loader.gif') no-repeat center;
+}
+
+.tabContent
+{
+    margin:10px;
+    }
+    
+.htmlPreviewPane
+{padding:10px;}
+
+.htmlPreviewPane img
+{
+    margin: 10px;
+	border: 1px solid black;
+    }
+    
+.codeBlock
+{
+    width: 100%;
+    height: 200px; 
+    overflow: auto; 
+    border: 1px solid #999999; 
+    background-color: White;
+    z-index: 100; 
+    position: relative;
+    }
+    
+
+/*help popup*/
+.help-htmlDisplayOptions{font-weight:normal;max-width:none;}
+.help-htmlDisplayOptions .popover-inner{color:#000;font-weight:normal;width:600px;height:400px}
+.help-htmlDisplayOptions .popover-content{height:348px;overflow:auto}
+
+.help-scriptOptions {font-weight:normal;max-width:none;}
+.help-scriptOptions .popover-inner{color:#000;font-weight:normal;width:600px;height:400px}
+.help-scriptOptions .popover-content{height:348px;overflow:auto}
+
+.help-registrationDomain {font-weight:normal;max-width:none;}
+.help-registrationDomain .popover-inner{color:#000;font-weight:normal;width:600px;height:300px}
+.help-registrationDomain .popover-content{height:248px;overflow:auto}
+
+.help-podcast{font-weight:normal;max-width:none;}
+.help-podcast .popover-inner{color:#000;font-weight:normal;width:600px;height:400px}
+.help-podcast .popover-content{height:348px;overflow:auto}
+
+.help-rss{font-weight:normal;max-width:none;}
+.help-rss .popover-inner{color:#000;font-weight:normal;width:600px;height:400px}
+.help-rss .popover-content{height:348px;overflow:auto}
+
+.popover .close
+{
+    padding:0px 5px 0px 0px;
+    }
+
+.popover .popover-content p
+{
+    padding:0px 0px 5px 0px;
+    }
+
+/*ecard overrides to make scEcard.css play nicely w/ bootstrap defaults)*/
+.csEcard .csEcard_addRecipient
+{
+    margin-top: -10px;
+}
+
+.csEcard .csEcard_msgWarning
+{
+    margin-top: -10px;
+}
+
+/*carousel styles*/
+#container
+{
+    width: 680px;
+    position: relative;
+}
+
+#carousel
+{
+    margin: 0 auto;
+}
+
+#carousel img
+{
+    border: 0;
+}
+
+div.info
+{ 
+    display:block;
+    visibility:visible;
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('images/info.png');
+    border: 1px solid; 
+    margin: 10px;
+    margin-bottom: 20px;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+        
+}
+
+div.info a
+{ 
+    color: #000099; 
+}
+
+.mediaHeader .description
+{
+    max-height:300px;
+    overflow:auto;
+    padding:0 5px 5px 5px;
+    }
+    
+
+.sortOptions
+{
+    padding:3px;
+    }
+
+.pagination .elipsis
+{
+    cursor:default;	
+    }
+    
+.pagination .elipsis a
+{
+    border:0px;
+    cursor:default;	
+    }
+    
+.pagination .elipsis a:hover{ 
+    background-color:White;
+    cursor:default;
+}
+    
+    
+.subscribe ul li
+{
+    list-style-type: none;
+}
+    
+.subscribe img
+{
+    padding:3px 10px 3px 0px;
+    cursor:pointer;
+    }
+    
+.csPodcastItem 
+{
+    padding:20px;
+    margin-bottom:10px;
+    }
+
+.csPodcastItem .date
+{
+    padding-left:20px;
+    float:right;
+    font-size:85%;
+    }
+    
+.csPodcastItem .title
+{
+    font-weight:bold;
+    }
+   
+.csPodcastItem .assets
+{
+    padding:10px;
+    } 
+
+.csPodcastItem .website
+{
+    display:block;
+    padding:9px; 
+    }
+
+.csPodcastItem .websiteLabel
+{
+    display: block;
+    float: left;
+    padding: 10px 10px 10px 0px;
+    font-size: 85%;
+} 
+    
+.csPodcastItem .relatedItems
+{
+    clear:both;
+    }
+    
+.csPodcastItem .lblMediaFiles    
+{
+    display:block;	
+    clear:both;
+    font-size:85%;
+    
+    }
+ 
+ .csPodcastItem .syndicateLabel    
+{
+        float:right;
+        margin-bottom:20px;
+    }
+ .csPodcastItem.selected    
+{
+    background-color:#f2f5f9;
+    }
+
+ 
+ /*registration classes*/    
+ .registration
+{
+    padding:10px;
+    }
+
+.registration p    
+{
+    padding:0 10px 10px 10px;
+    }
+    
+.registration .requiredNote {
+	float:right;
+}
+
+.registration .warning, 
+.account .warning, 
+.login .warning,
+.loginReset .warning  
+{
+    color:Red;
+    }
+    
+.registration .control-label .warning, 
+.account .control-label .warning, 
+.login .control-label .warning,
+.loginReset .control-label .warning 
+{
+    display:inline-block;
+    padding-left:3px;
+    margin-right:-10px;
+    }  
+    
+.registration .modal-registration, .account .modal-registration
+{
+    width:800px ;
+    margin-left:-390px ;
+    }
+    
+.registration .modal-registration .btn, .account .modal-registration .btn
+{
+    color:Black;
+    }
+    
+.registration .modal-registration .modal-body, .account .modal-registration .modal-body
+{
+    height:400px;
+    overflow:auto;
+    padding-bottom:10px;
+    }
+    
+.registration .orgSelected .cmdButtons, .account .orgSelected .cmdButtons
+{
+    padding:40px 0 0 0;
+    }
+    
+.registration p.cancelMsg, .account p.cancelMsg    
+{ 
+    padding:5px 0 0 90px;
+    }
+    
+.registration #atozList li, .account #atozList li
+{ 
+    list-style:none;
+    border-bottom:1px solid #ddd;
+    padding:10px;
+    width:90%;
+    } 
+    
+.registration #atozList li a, .account #atozList li a
+{ 
+    display:inline-block;
+    width:200px; 
+    }
+    
+.registration #atozList li .city, .account #atozList li .city
+{ 
+    display:inline-block;
+    width:250px; 
+    white-space:nowrap;
+}
+
+.registration #atozList li .state, .account #atozList li .state
+{ 
+    display:inline-block;
+    width:150px; 
+    white-space:nowrap;
+}
+    
+.registration .help-block, .account .help-block
+{
+ margin-top:10px;
+    }
+
+
+.registration .domainRow .controls .close
+{
+    float:none;
+    }
+    
+ .registration h1 
+ {
+     font-size:  2em;
+ }
+    
+/*Account classes*/
+.account
+{
+    padding:10px;
+    }
+    
+.account .nolink
+{
+    color:Black;
+    text-decoration:none;
+    cursor:default;	
+    }

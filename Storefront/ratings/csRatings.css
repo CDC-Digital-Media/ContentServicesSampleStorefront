@@ -1,0 +1,336 @@
+﻿.cs-ratings, .ratingPopUpContainer
+{
+    font-family: Segoe UI;
+    font-size: 10pt;
+}
+
+.cs-ratings
+{    
+    height: 30px;    
+}
+
+.cs-ratings .ratingItemsSpan
+{
+    display: inline-block;
+    padding: 1px;
+}
+
+
+
+.cs-ratings .ratingContainer
+{
+    display: inline-block;
+	text-align:left;
+    
+    }
+
+.cs-ratings .ratingItem
+{
+    background-image: url('images/5stars.png');
+    width: 15px;
+    height: 15px;
+    float: left;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.cs-ratings .defaultOn  {background-position: 0 0px;}
+.cs-ratings .defaultOff {background-position: 0 -14px;}
+.cs-ratings .activeOn   {background-position: 0 0px;}
+.cs-ratings .activeOff  {background-position: 0 -14px;}
+.cs-ratings .selectedOn  {background-position: 0 0px;}
+
+.cs-ratings .rateCount
+{
+    font-size: smaller;
+    padding: 0 0 0 5px;
+    line-height: 14px;
+    vertical-align: top;
+}
+
+.cs-ratings .rateCountcompleteMsg /* ezx8 */
+{
+    font-size: smaller;
+    padding: 0 0 0 5px;
+    line-height: 18px;
+    vertical-align: top;
+    color: #999999;
+}
+
+.cs-ratings .rateCommentCount
+{
+    font-size: smaller;
+    padding: 0 0 0 0px;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.cs-ratings .rateLink
+{
+    font-size: smaller;
+    padding: 0 0 0 5px;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.cs-ratings .rateCommentLink
+{
+    font-size: smaller;
+    padding: 0 0 0 10px; 
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.cs-ratings .completeMsg
+{
+    font-size: smaller;
+    padding: 0 0 0 5px;
+    line-height: 18px;
+    vertical-align: top;
+    color: #999999;
+}
+
+.cs-ratings .outcomeMsg
+{
+    font-size: smaller;
+    clear:left;
+    line-height: 0px;
+}
+
+.cs-ratings .ratingPopupMask
+{
+    position: absolute;
+    display: none;
+    z-index: 9000;
+    background-color: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.cs-ratings .ratingPopUpContainer
+{
+    position: absolute;
+    display: none;
+    border: 1px solid #3d316a;
+    background-color: #ffffff;
+    width: 400px;
+    height: 575px;  
+    z-index: 9999;
+}
+
+.cs-ratings .ratingPopUpContainer .header
+{
+    background-color: #eeecf6;
+    margin:3px;    
+    color: #3d316a;
+    height:30px;
+}
+
+.cs-ratings .ratingPopUpContainer .header span
+{
+    display: block;
+    padding: 5px;
+}
+
+.cs-ratings .ratingPopUpContainer .header .left
+{
+    float:left;
+    font-weight:bold;
+    
+} 
+
+.cs-ratings .ratingPopUpContainer .header .right
+{
+    float:right;
+}
+
+.cs-ratings .ratingPopUpContainer .header .closeModal
+{
+    
+    padding: 5px;
+    float:right;
+}
+
+.cs-ratings .ratingPopUpContainer .content 
+{
+    padding:15px;
+} 
+
+.cs-ratings .ratingPopUpContainer .content .left
+{
+    float:left; 
+} 
+
+.cs-ratings .ratingPopUpContainer .content .right
+{
+    float:right; 
+    text-align:right;
+}
+
+
+
+
+.cs-ratings .ratingPopUpContainer .content .ratingLabel
+{
+    line-height: 18px;
+    vertical-align: top;
+    display:block;
+    clear:left;
+    float:left;    
+    padding-right:10px;
+}
+
+
+.cs-ratings .ratingPopUpContainer .content .ratingInstructionSpan
+{
+    display:block;
+    clear:left;
+    float:left;
+    font-size:smaller;
+    padding-top:5px;
+}
+
+.cs-ratings .ratingPopUpContainer .content .ratingCountSpan
+{
+ 
+}
+
+.cs-ratings .ratingPopUpContainer .content .ratingMetricSpan
+{
+    padding-top:5px;
+    display:block;
+    clear:left;
+}
+
+.cs-ratings .ratingPopUpContainer .content .submitSpan
+{
+    display:block;
+    clear:both;
+    text-align:center;    
+    padding-top:15px;
+}
+
+.cs-ratings .ratingPopUpContainer .content .submitAnchor
+{
+    color: #000000 !important;
+    text-decoration:none !important;
+    margin:3px 3px 0px 3px;
+    padding: 3px 10px 3px 10px;
+    border:1px solid #cccccc;
+    background: #eeeeee;
+}
+
+.cs-ratings .ratingPopUpContainer .content .cancelAnchor
+{
+    color: #000000 !important;
+    text-decoration:none !important;
+    margin:3px 3px 0px 3px;
+    padding: 3px 5px 3px 5px;
+    border:1px solid #cccccc;
+    background: #eeeeee;
+}
+
+.cs-ratings .ratingPopUpContainer .content .disabled  
+{
+    color:gray !important; 
+    text-decoration:none;
+    cursor:default;
+} 
+
+.cs-ratings .ratingPopUpContainer .content .comment
+{
+    display:block;
+    clear:both;
+    text-align:left;         
+    height:auto;
+}
+
+.cs-ratings .ratingPopUpContainer .content .textareaSpan
+{
+    display:block;
+    clear:both;
+    text-align:left;    
+    padding-top:15px;
+}
+
+.ratings_counter_count_character
+{
+    float:left;
+    padding:5px 5px 5px 0px;
+	/*font-size:14px;
+	font-weight:bold;
+	color:#ccc;*/
+}
+.ratings_character_warning
+{
+    color:#600;
+}
+
+.ratings_character_exceeded
+{
+   color:#e00;
+} 
+.watermark
+{ 
+  color: #AAAAAA; 
+}
+/*expand and collapse */
+div#disclaimer_div, div#rules_div
+{
+    height: 190px;
+    overflow: auto;
+}       
+.expand_div_content
+{
+    width: 330px;
+    height: 90px;
+    margin: 0px auto; 
+    border: 1px dotted #999999;
+    overflow: hidden;
+    text-align: justify; 
+    padding-left:5px;
+    margin: 5px 5px 5px 5px; 
+          
+}       
+#disclaimer_div,#rules_div
+{
+    overflow-y: scroll;
+    padding: 15px;
+    height: 150px;
+    line-height: 25px;
+}
+
+/*save confirmation*/
+.success
+{  
+    display:block;
+    visibility:visible;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('images/success.png'); 
+    border: 1px solid; 
+    width:400px;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;       
+}
+.cs-ratings > .close
+{
+    float: right;
+    margin: -15px -10px;            
+    cursor:  pointer;
+}
+.close1:hover
+{
+    background-color: #a44;
+        
+    padding-bottom:5px;
+    top: 0px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    background-color: #4F8A10;
+    color: #DFF2BF;
+    text-align: center;
+}    

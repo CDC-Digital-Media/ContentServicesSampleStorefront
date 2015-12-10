@@ -1,0 +1,247 @@
+﻿<!-- Choose from existing orgs w/a-z index -->
+<div class='chooseOrg'>
+    <p class='explanation'>
+        If your organization is already syndicating content it will appear in the list below.
+        You'll want to register under your organization's existing name, so that you coordinate with others who are also syndicating content. 
+        If your organization is not already in the list, you may add it.
+    </p>
+    <small>
+
+        <div class="alert alert-error existingOrganizationValidation hide">                
+            <span class='msg'>Message</span>
+        </div> 
+
+        <div class="form-horizontal">
+            <fieldset>
+                <div class='requiredNote' style='float: right;'>
+                    <span class='warning'>*</span> Required field
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="textinput">Organization<span class='warning'>*</span></label>
+                    <div class="controls">
+                        <input id="txtOrg" name="textinput" placeholder="Start typing to find matching names" class="input-xlarge" required="" type="text"/>
+                        <p class="help-block">
+                            Did not find your organization? <a data-toggle='modal' href="#atozModal">Try the A-Z Organization Index.</a>
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </small>
+    <small>
+        <div class="form-horizontal cmdButtons">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="button1id">
+                    </label>
+                    <div class="controls">
+                        <input type='button' class='btn btn-default btn-small btnAddNewOrg' value='Add a New Organization' />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </small>
+    <div class="modal hide modal-registration" id="atozModal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal" style='text-decoration:none;'>×</a>
+            <h3>A-Z Organization Index</h3>
+        </div>
+        <div class="modal-body">
+            <p></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+        </div>
+    </div>
+</div>
+    <!-- Detail of Chosen Org -->
+<div class='orgSelected hide'>
+    <div class="row">
+        <div class="span3 text-right">
+            <small>You've selected:</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">Organization Name</div>
+        <div class='span3 orgName'>Text</div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">Organization Type</div>
+        <div class='span3 orgType'>Text</div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">Country</div>
+        <div class='span3 orgCountry'>Text</div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">State/Province</div>
+        <div class='span3 orgState'>Text</div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">County/Region</div>
+        <div class='span3 orgCounty'>Text</div>
+    </div>
+    <div class="row">
+        <div class="span3 text-right">Web Site Domain(s)</div>
+        <div class='span3 orgDomain'>Text</div>
+    </div>
+
+    <small>
+        <div class="form-horizontal cmdButtons hide">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="button1id">
+                    </label>
+                    <div class="controls">                        
+                        <input type='button' class='btn btn-default btn-small btnCancel orgSelected' value='Choose a Different Organization' />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </small>
+</div>
+
+<!-- New/Edit orgs  -->
+<div class='newOrg hide'>
+    <p class='explanation'>
+        Creating a new syndicating organization will grant you access to a workspace where you
+        can track the content that you want to syndicate to your website. This space can
+        be shared with other members of your team to create a collaboration point where
+        content can be selected, previewed and vetted proir to syndication.
+    </p>
+    <div class='registrationForm'>
+        <small>
+
+            <div class="alert alert-error newOrganizationValidation hide">                
+                <span class='msg'>Message</span>
+            </div>  
+
+            <div class="form-horizontal">
+                <fieldset>
+                    <!-- Select Basic -->
+                    <div class='requiredNote' style='float: right;'>
+                        <span class='warning'>*</span> Required field
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="orgName">
+                            Organization Name<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="orgName" name="orgName" placeholder="Organization Name" class="input-xlarge" type="text" maxlength="200">
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="control-group">
+                        <label class="control-label" for="orgType">
+                            Organization Type<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="orgType" name="orgType" class="input-xlarge">
+                                <option value=''>Select a Type</option>                                
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="control-group hide">
+                        <label class="control-label" for="txtTypeOther">
+                            Please Describe:<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <input id="txtTypeOther" name="txtTypeOther" placeholder="Describe your Organization" class="input-xlarge" type="text" maxlength="200">                            
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="control-group">
+                        <label class="control-label" for="selectContinent">Continent<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="selectContinent" name="selectContinent" class="input-xlarge location">
+                                <option value=''>Select a Continent</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="control-group">
+                        <label class="control-label" for="selectCountry">Country<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="selectCountry" name="selectCountry" class="input-xlarge location">
+                                <option value=''>Select a Country</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Select Basic -->
+                    <div class="control-group">
+                        <label class="control-label" for="selectState">State/Province<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="selectState" name="selectState" class="input-xlarge location">
+                                <option value=''>Select a State/Province</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="selectRegion">County/Region<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="selectRegion" name="selectRegion" class="input-xlarge location">
+                                <option value=''>Select a County/Region</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+<!--                    <div class="control-group">
+                        <label class="control-label" for="selectCity">City<span class='warning'>*</span></label>
+                        <div class="controls">
+                            <select id="selectCity" name="selectCity" class="input-xlarge location">
+                                <option value=''>Select a City</option>
+                            </select>
+                        </div>
+                    </div>-->
+                    <!-- Text input-->
+                    <div class="control-group domainRow">
+                        <label class="control-label" for="textinput">
+                            Web Site Domain
+                            <a href='#' class='domainHelp'><i class="icon-question-sign"></i></a>
+                            <span class='warning'>*</span>
+                        </label>
+                        <div class="controls">
+                            <input id="textinput" name="textinput" placeholder="Web Site Domain" class="input-xlarge txtDomain" type="text" maxlength="1024">                            
+                        </div>
+                    </div>
+                    <div class="control-group domainRowAdd">
+                        <label class="control-label"></label>
+                        <div class="controls">                            
+                            <div><a href='#' class='addDomain'>Add another Domain</a></div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="button1id">
+                        </label>
+                        <div class="controls">                            
+                            <input type='button' class='btn btn-default  btn-small btnCancelNewOrg' value='Choose from Existing Organizations' />                            
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </small>
+    </div>
+</div>
+
+
+
+<div style='display: none;'>
+    <div class='domainHelpContent' title='Web Site Domain'>
+        <small>
+            <p>
+                <b>Why do you need my Web Site Domain?</b>
+            </p>
+            <p>
+            Collecting your domain name allows us to count the number of visitors to CDC hosted media who are directed to us via the media that you have syndicated. 
+            (Please note that if you use one of our mapping features users are kept on your site to see that media if you also have it syndicated)   
+            It also provides an ease of use factor for our users that manage syndication on multiple domains.
+            </p>
+            <p>
+            <b>Acceptable formats:</b>
+            <ul>
+                <li>www.yourDomain.com or www.yourDomain.com/yourFolder</li>
+                <li>http://www.yourDomain.com or http://www.yourDomain.com/yourFolder</li>
+                <li>https://www.yourDomain.com or https://www.yourDomain.com/yourFolder</li>                
+            </ul>
+            </p>
+        </small>
+    </div>
+</div>
